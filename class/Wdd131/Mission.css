@@ -2,10 +2,23 @@ body {
 max-width: 800px;
 margin:auto;
 text-align: center;
+background
+}
+.color {
+/* background-color: black; */
+}
 
-
+.Light {
+    background-color: white;
 
 }
+
+.Dark {
+    background-color: black;
+}
+
+
+
 
 .container{
     border: 1px solid black;
@@ -67,4 +80,36 @@ li {
 img {
     width: 150px;
     margin: 50px
+}
+
+/* Default Light Mode */
+body.light-mode {
+    background-color: #f4f4f4;
+    color: black;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+/* Dark Mode */
+body.dark-mode {
+    background-color: #333;
+    color: white;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+.container {
+    padding: 20px;
+}
+
+.header {
+    font-size: 2em;
+    margin-bottom: 10px;
+}
+
+.subheader {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.begin, .statement, ol {
+    margin: 10px 0;
 }
